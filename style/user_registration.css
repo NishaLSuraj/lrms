@@ -1,0 +1,160 @@
+body{
+	background-color: rgb(240, 240, 240);
+}
+.container{
+	width: 100%;
+	display: flex;
+	
+}
+.img1
+{
+	width: 30%;
+	padding-top: 124px;
+	padding-left: 70px;
+
+}
+.regform
+{   
+ margin: auto;
+}
+.mainhead
+{
+	padding:20px;
+	font-size: 40px;
+	font-family:cursive;
+	font-weight: bold;
+	text-align: center;
+	
+}
+.inp1,.inp2,.inp3,.inp4,.inp5,.inp6,.inp7,.inp8,.inp9
+{
+ padding: 10px;
+ margin-bottom: 10px;
+ text-align: justify;
+}
+.inp1 input,.inp2 input,.inp3 input,.inp4 input,.inp5 input,.inp6 input,.inp8 input,.inp9 input
+{
+	background-color: rgb(255, 255, 255);
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid grey;
+	width: 400px;
+	height:30px;
+}
+input[type=text]:focus{
+	box-shadow: 1px 1px 5px 1px skyblue;
+	outline: none;
+}
+input[type=email]:focus{
+	box-shadow: 1px 1px 5px 1px skyblue;
+	outline: none;
+}
+input[type=password]:focus{
+	box-shadow: 1px 1px 5px 1px skyblue;
+	outline: none;
+}
+input[type=file]:focus{
+	box-shadow: 1px 1px 5px 1px skyblue;
+	outline: none;
+}
+#inputTag
+{
+	height: 30px;
+	padding-top: 10px;
+	padding-left: 5px;
+}
+#question
+{
+	text-align: center;
+	width: 410px;
+	height:30px;
+
+}
+.inp9 input
+{
+	width: 410px;
+	height: 50px;
+	border-radius: 10px;
+	border: 1px solid grey;
+	font-size: 20px;
+	color: white;
+	font-weight: bold;
+	background-color: rgb(13,110,253);
+
+}
+
+.inp10
+{
+	background-color: rgb(13,202,240);
+	border: 1px solid grey;
+	text-align: center;
+	border-radius: 5px;
+	width: 410px;
+	height:40px;
+	margin: auto;
+	padding-top: 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+}
+
+
+@media screen and (max-width: 480px) and (min-width: 0px)
+{
+.container{
+
+}
+.mainhead
+{
+padding:9px;
+}
+.img1{
+display: none;
+
+}
+.regform{
+display: block;
+}
+.inp1 input,.inp2 input,.inp3 input,.inp4 input,.inp5 input,.inp6 input,.inp8 input,.inp9 input
+{
+width: 200px;
+height:25px;
+}
+.inp7{
+height: 25px;
+}
+
+.inp9 input
+{
+width: 200px;
+height: 30px;
+}
+
+.inp10
+{
+width: 200px;
+height:25px;
+margin-left: 10px;
+margin-bottom: 20px;
+
+
+}
+a{
+
+font-size: 14px;
+padding-bottom:15px;
+}
+#question
+{
+width: 204px;
+height:25px;
+}
+.inp1,.inp2,.inp3,.inp4,.inp5,.inp6,.inp7,.inp8,.inp9
+{
+ padding: 10px;
+ margin-bottom: 5px;
+ 
+}
+}

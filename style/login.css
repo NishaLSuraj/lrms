@@ -1,0 +1,311 @@
+*{
+font-size: 18px;
+background-color: #F0F3F4;
+}
+body{
+margin: 0;
+}
+h1{
+font-family: cursive;
+font-size: 50px;
+text-align: center;
+}
+.outer{
+/*border: 1px solid black;*/
+width: 100%;
+height: 630px;
+position: relative;
+}
+.flex-container{
+/*border: 1px solid black;*/
+width: 1000px;
+height: 500px;
+display: flex;
+position: absolute;
+left: 170px;
+bottom: 70px;
+}
+.box1{
+/*border: 1px solid black;*/
+width: 500px;
+height: 400px;
+margin-top: 50px;
+background-image: url(../images/login.png);
+background-size: 100% 100%;
+
+
+}
+
+.box2{
+/*border: 1px solid black;*/
+width: 700px;
+height: 500px;
+margin-left: 30px;
+
+}
+/*#error{
+width: 550px;
+height: 40px;
+margin: 10px;
+border-radius: 5px;
+border: none;
+background-color: transparent;*/
+
+/*}*/
+#mail,#password{
+width: 550px;
+height: 55px;
+margin: 10px;
+border-radius: 5px;
+border: 1px solid gray;
+background-color: white;
+}
+input[type="email"]:focus{
+box-shadow: 1px 1px 5px 1px skyblue;
+outline: none;
+}
+input[type="password"]:focus{
+box-shadow: 1px 1px 5px 1px skyblue;
+outline: none;
+}
+#log{
+width: 555px;
+height: 55px;
+margin: 10px;
+border-radius: 5px;
+color: white;
+background-color: blue;
+border: 1px solid gray;
+}
+a
+{
+	text-decoration: none;
+}
+#create
+{
+display: block;
+width: 555px;
+height: 55px;
+margin: 10px;
+border-radius: 5px;
+background-color: rgb(13,202,240);
+border: 1px solid gray;
+}
+
+#frgt{
+border: none;
+background: transparent;
+margin: 10px;
+font-size: 14px;
+text-decoration: underline;
+
+}
+#err{
+color: red;
+font-size: 20px;
+padding-left: 5px;
+}
+.modal {
+   position: fixed;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   opacity: 0;
+   visibility: hidden;
+   transform: scale(1.1);
+   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+   margin: auto;
+   background-color: white;
+   padding: 15px;
+   width: 35%;
+   border-radius: 7px;
+}
+.close-button {
+   float: right;
+   width: 1.5rem;
+   font-size: 50px;
+   text-align: center;
+   cursor: pointer;
+   border-radius: 0.25rem;
+}
+.close-button:hover {
+   background-color: darkgray;
+}
+.show-modal {
+   opacity: 1;
+   visibility: visible;
+   transform: scale(1.0);
+   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+.reset_style{
+   display: flex;
+   justify-content: space-between;
+}
+input{
+  width: 94%;
+   height: 40px;
+   border-width: thin;
+   display: flex;
+   font-size: 15px;
+   align-content: center;
+   padding-left: 12px;
+   border-radius: 6px;
+   box-sizing: border-box;
+   margin: 20px;
+}
+input[type="submit"]{
+    width: 37%;
+   color: #ffffff;
+   justify-content: center;
+   height: 40px;
+   border: none;
+   background-color: #3498DB;
+   font-size: 17px;
+   border-radius: 6px;
+   box-sizing: border-box;
+}
+#security_text{
+   color: #3498DB;
+   margin-left: 20px;
+   font-size: 16px;
+}
+.icon
+{
+	display: none;
+}
+
+#rtform{
+   position: relative;
+}
+#rtform{
+   width: 300px;
+   background:transparent;
+   outline: none;
+   border: none;
+   padding: 10px;
+   border-radius: 6px;
+   color: #FFFF;
+   font-style: 18px;
+}
+ #email1 input{
+	margin-top: 20px;
+   
+
+}
+#rtform #inputbox{
+   position: relative;
+
+
+}
+#rtform input{
+	width: 500px;
+}
+#txt{
+   display: block;
+   color: #000;
+   font-style:300px ;
+   font-weight: italics;
+   padding: 5px;
+}
+#rtform.invalid #inputbox: before{
+   content:'' ;
+   position: absolute;
+   right: 12px;
+   top: 12px;
+   width:24px;
+   height: 24px;
+   background: url(images/invalid.png);
+   background-size: cover;
+   z-index:1000 ;
+}
+#rtform.valid #inputbox: before{
+   content:'' ;
+   position: absolute;
+   right: 12px;
+   top: 9px;
+   width:24px;
+   height: 24px;
+   background: url(images/valid.png);
+   background-size: cover;
+   z-index:1000 ;
+}
+
+
+@media screen and (max-width: 600px){
+
+.outer{
+width: 40%;
+
+}
+.flex-container{
+/*border: 1px solid black;*/
+display: contents;
+width: 20%;
+height: 70px;
+
+
+}
+.box1{
+display: none;
+visibility: hidden;
+}
+.box2{
+
+width: 270px;
+position: absolute;
+
+
+}
+#mail,#password{
+width: 250px;
+height: 40px;
+}
+#log{
+width: 255px;
+height: 40px;
+
+}
+#create{
+width: 255px;
+height: 40px;
+
+}
+#frgt{
+
+font-size: 15px;
+
+
+}
+.icon
+{
+	display: block;
+
+}
+#con
+{
+	font-size: 120px;
+	margin-left: 80px;
+	margin-top: 20px;
+}
+
+}
+
+
+@media screen and (max-width:1150px){
+   .modal-content{
+           width: 80%;
+           margin-left: 20px;
+           margin-top: 49px;
+       
+   }
+   .modal-content input{
+      margin: 11px;
+      width: :50px;
+      margin-top: 20px;
+   }
+   
+}
